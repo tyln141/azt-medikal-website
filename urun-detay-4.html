@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port İğneleri - AZT Medikal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">AZT Medikal®</div>
+            <nav class="nav">
+                <a href="index.html#hakkimizda">Hakkımızda</a>
+                <a href="index.html#urunler">Ürünler</a>
+                <a href="index.html#neden-biz">Neden Biz</a>
+                <a href="index.html#iletisim">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-detail-page">
+        <div class="container product-detail-container">
+            
+            <div class="product-list">
+                <a href="index.html" class="back-link"><i class="ri-arrow-left-line"></i> Ana Sayfaya Dön</a>
+                <h1>Port İğneleri</h1>
+                <p class="category-description">Güvenilir port erişimi için özel olarak tasarlanmış yüksek kaliteli port iğneleri sunuyoruz.</p>
+
+                <div class="product-listing">
+                    <img src="https://readdy.ai/api/search-image?query=Port%20needle%20SafeAccess%2019G" alt="Port İğnesi - SafeAccess 19G">
+                    <div class="product-info">
+                        <h3>Port İğnesi - SafeAccess 19G</h3>
+                        <div class="features-grid">
+                            <span><i class="ri-check-line"></i> 19G kalınlık</span>
+                            <span><i class="ri-check-line"></i> Güvenlik mekanizması</span>
+                            <span><i class="ri-check-line"></i> Kolay yerleştirme</span>
+                            <span><i class="ri-check-line"></i> Tek kullanımlık</span>
+                        </div>
+                        <a href="#" class="button">Fiyat Teklifi Al</a>
+                    </div>
+                </div>
+
+                <div class="product-listing">
+                    <img src="https://readdy.ai/api/search-image?query=Port%20needle%20UltraPoint%2020G" alt="Port İğnesi - UltraPoint 20G">
+                    <div class="product-info">
+                        <h3>Port İğnesi - UltraPoint 20G</h3>
+                        <div class="features-grid">
+                            <span><i class="ri-check-line"></i> 20G ince kalınlık</span>
+                            <span><i class="ri-check-line"></i> Keskin uç tasarımı</span>
+                            <span><i class="ri-check-line"></i> Hasta konforu</span>
+                            <span><i class="ri-check-line"></i> Yüksek dayanıklılık</span>
+                        </div>
+                        <a href="#" class="button">Fiyat Teklifi Al</a>
+                    </div>
+                </div>
+
+                <div class="product-listing">
+                    <img src="https://readdy.ai/api/search-image?query=Port%20needle%20FlexiPort%2022G" alt="Port İğnesi - FlexiPort 22G">
+                    <div class="product-info">
+                        <h3>Port İğnesi - FlexiPort 22G</h3>
+                        <div class="features-grid">
+                            <span><i class="ri-check-line"></i> 22G ekstra ince</span>
+                            <span><i class="ri-check-line"></i> Esnek yapı</span>
+                            <span><i class="ri-check-line"></i> Minimal travma</span>
+                            <span><i class="ri-check-line"></i> Yüksek akış hızı</span>
+                        </div>
+                        <a href="#" class="button">Fiyat Teklifi Al</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h2>Ürün Özellikleri</h2>
+                    <div class="widget-content">
+                        <div>
+                            <h3>İğne Kalınlıkları</h3>
+                            <ul>
+                                <li><i class="ri-arrow-right-s-line"></i> 18G - Yüksek akış hızı</li>
+                                <li><i class="ri-arrow-right-s-line"></i> 19G - Standart kullanım</li>
+                                <li><i class="ri-arrow-right-s-line"></i> 20G - Hassas enjeksiyon</li>
+                                <li><i class="ri-arrow-right-s-line"></i> 22G - Minimal travma</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Güvenlik Özellikleri</h3>
+                            <ul>
+                                <li><i class="ri-shield-check-line"></i> Otomatik güvenlik mekanizması</li>
+                                <li><i class="ri-shield-check-line"></i> İğne ucu koruması</li>
+                            </ul>
+                        </div>
+                         <div>
+                            <h3>Kullanım Alanları</h3>
+                            <ul>
+                                <li><i class="ri-hospital-line"></i> Kemoterapi uygulamaları</li>
+                                <li><i class="ri-hospital-line"></i> İnfüzyon tedavileri</li>
+                                <li><i class="ri-hospital-line"></i> Kan transfüzyonu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+    
+    <footer id="iletisim" class="footer">
+        <div class="container footer-container">
+            </div>
+    </footer>
+
+    <div id="form-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Fiyat Teklifi Talep Formu</h2>
+                <button id="close-modal" class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="selected-product">
+                    <strong>Seçilen Ürün:</strong>
+                    <span id="selected-product-name"></span>
+                </div>
+                <form id="quote-form" class="form-grid">
+                    <input type="text" name="fullName" placeholder="Ad Soyad *" required>
+                    <input type="tel" name="phone" placeholder="Telefon *" required>
+                    <input type="email" name="email" placeholder="E-posta *" required>
+                    <input type="text" name="institution" placeholder="Kurum/Hastane Adı *" required>
+                    <textarea name="address" placeholder="Tam Adresiniz *" rows="3" required></textarea>
+                    <input type="number" name="quantity" placeholder="İhtiyaç Miktarı">
+                    <textarea name="notes" placeholder="Özel istekleriniz veya notlarınız" rows="3"></textarea>
+                    <button type="submit" class="button form-submit-button">
+                        <i class="ri-send-plane-line"></i> Teklif Talep Et
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript kodu, diğer ürün detay sayfalarıyla BİREBİR AYNI.
+        const modal = document.getElementById('form-modal');
+        const closeModalButton = document.getElementById('close-modal');
+        const quoteForm = document.getElementById('quote-form');
+        const selectedProductNameElement = document.getElementById('selected-product-name');
+        const openModalButtons = document.querySelectorAll('.product-listing .button');
+        function openModal(productName) {
+            selectedProductNameElement.textContent = productName;
+            modal.style.display = 'flex';
+        }
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+        openModalButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault();
+                const productCard = event.target.closest('.product-info');
+                const productName = productCard.querySelector('h3').textContent;
+                openModal(productName);
+            });
+        });
+        closeModalButton.addEventListener('click', closeModal);
+        quoteForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const formData = new FormData(quoteForm);
+            const formProps = Object.fromEntries(formData);
+            const emailSubject = `Fiyat Teklifi Talebi - ${selectedProductNameElement.textContent}`;
+            const emailBody = `
+    Yeni Fiyat Teklifi Talebi
+    Seçilen Ürün: ${selectedProductNameElement.textContent}
+    Müşteri Bilgileri:
+    - Ad Soyad: ${formProps.fullName}
+    - Telefon: ${formProps.phone}
+    - E-posta: ${formProps.email}
+    - Kurum/Hastane: ${formProps.institution}
+    - Adres: ${formProps.address}
+    - İhtiyaç Miktarı: ${formProps.quantity || 'Belirtilmemiş'}
+    - Ek Notlar: ${formProps.notes || 'Yok'}
+            `;
+            window.location.href = `mailto:info@aztmedikal.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+            setTimeout(closeModal, 500);
+        });
+    </script>
+</body>
+</html>

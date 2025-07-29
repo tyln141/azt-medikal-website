@@ -1,0 +1,471 @@
+/* --- GOOGLE FONTLARI --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* --- TASARIM DEĞİŞKENLERİ (SİTENİN KONTROL PANELİ) --- */
+:root {
+    --primary-color: #2E5C8A;
+    --dark-text: #333333;
+    --light-text: #666666;
+    --background-white: #FFFFFF;
+    --background-grey: #F5F5F5;
+    --border-color: #EAEAEA;
+    --font-main: 'Inter', sans-serif;
+    --font-signature: 'Pacifico', cursive;
+}
+
+/* --- TEMEL AYARLAR (RESET) --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: var(--dark-text);
+    background-color: var(--background-white);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- GENEL ELEMENTLER --- */
+.section {
+    padding: 80px 0;
+}
+.section-grey {
+    background-color: var(--background-grey);
+}
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.button {
+    background-color: var(--primary-color);
+    color: var(--background-white);
+    padding: 16px 32px;
+    border: none;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(46, 92, 138, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(46, 92, 138, 0.5);
+}
+
+/* --- HEADER --- */
+.header {
+    background-color: var(--background-white);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.nav a {
+    text-decoration: none;
+    color: var(--dark-text);
+    margin-left: 32px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav a:hover {
+    color: var(--primary-color);
+}
+
+/* --- HERO BÖLÜMÜ --- */
+.hero {
+    height: 90vh;
+    background-image: linear-gradient(rgba(46, 92, 138, 0.3), rgba(46, 92, 138, 0.3)), url('https://readdy.ai/api/search-image?query=Bright%20modern%20medical%20laboratory&width=1920&height=1080');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-content {
+    color: var(--background-white);
+}
+.hero h1 {
+    font-size: 60px;
+}
+.hero h2 {
+    font-size: 24px;
+    margin-top: 16px;
+    margin-bottom: 48px;
+    opacity: 0.9;
+}
+
+/* --- HAKKIMIZDA BÖLÜMÜ --- */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.about-text, .about-logo {
+    flex: 1;
+}
+.about-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.stats-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 32px;
+}
+.stat-item {
+    text-align: center;
+}
+.stat-item strong {
+    font-size: 36px;
+    color: var(--primary-color);
+    display: block;
+}
+.stat-item span {
+    color: var(--light-text);
+}
+.about-logo img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* --- KART YAPILARI --- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+.card {
+    background-color: var(--background-white);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Hizalama için Flexbox eklemeleri */
+    display: flex;
+    flex-direction: column;
+}
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.card p {
+    color: var(--light-text);
+    margin-bottom: 24px;
+    /* Hizalama için sihirli dokunuş */
+    flex-grow: 1;
+}
+.button-card {
+    background-color: var(--primary-color);
+    color: var(--background-white);
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+.button-card:hover {
+    background-color: #24496d;
+}
+.card-icon {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 24px;
+}
+
+/* --- FOOTER --- */
+
+.footer {
+    background-color: var(--dark-text);
+    color: var(--background-grey);
+    padding: 60px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start;
+
+    max-width: 1200px;         /* İçeriği sınırlı tut */
+    margin: 0 auto;            /* Ortala */
+    padding: 0 40px;           /* Kenar boşluğu */
+    box-sizing: border-box;   /* Padding genişlik dışında kalmasın */
+}
+
+
+.footer-column {
+    flex: 1;
+    /* Kolonun içindeki her şeyi dikey bir sütun gibi davranmaya zorla */
+    display: flex;
+    flex-direction: column;
+    /* Kolon içindeki her şeyi sola yasla (EN GÜÇLÜ KURAL) */
+    align-items: flex-start;
+
+    max-width: 1200px;   /* veya senin sitenin genişliğine uygun bir değer */
+    margin: 0 auto;
+    padding: 0 40px;     /* mobilde daha iyi görünmesi için */
+    box-sizing: border-box;
+}
+
+/* Kolon içindeki her elementin sola yaslı olduğunu garantiye al */
+.footer-column .logo,
+.footer-column h4,
+.footer-column p,
+.footer-column span {
+    text-align: left;
+    width: 100%; /* Elementlerin tüm genişliği kaplamasını sağlar */
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: var(--background-white);
+}
+
+.footer-column p, .footer-column span {
+    color: #A9A9A9;
+    margin-bottom: 12px;
+}
+
+.footer-column i {
+    margin-right: 8px;
+    color: var(--primary-color);
+}
+
+/* İmza Stilimiz */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.signature {
+    font-family: var(--font-signature);
+    font-size: 14px;
+    color: #888888;
+    margin-top: 32px;
+    text-align: center;
+    width: 100%;
+}
+.signature {
+    font-family: var(--font-signature);
+    font-size: 14px;
+    color: #888888;
+    margin-top: 32px;
+    text-align: center;
+    width: 100%;
+}
+
+/* --- ÜRÜN DETAY SAYFASI --- */
+.product-detail-page {
+    padding: 40px 0;
+}
+.product-detail-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.back-link i {
+    margin-right: 8px;
+}
+.product-list h1 {
+    font-size: 42px;
+}
+.category-description {
+    font-size: 18px;
+    color: var(--light-text);
+    margin-bottom: 48px;
+}
+.product-listing {
+    display: flex;
+    background-color: var(--background-white);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 32px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.product-listing img {
+    width: 33.33%;
+    object-fit: cover;
+}
+.product-info {
+    padding: 32px;
+    width: 66.66%;
+}
+.product-info h3 {
+    font-size: 24px;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 24px;
+    color: var(--light-text);
+}
+.features-grid span {
+    display: flex;
+    align-items: center;
+}
+.features-grid i {
+    color: #28a745;
+    margin-right: 8px;
+}
+.subcategory-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 48px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 12px;
+}
+
+/* --- SIDEBAR --- */
+.sidebar .sidebar-widget {
+    background-color: var(--background-grey);
+    padding: 32px;
+    border-radius: 16px;
+    position: sticky;
+    top: 100px;
+}
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.sidebar .widget-content > div {
+    margin-bottom: 32px;
+}
+.sidebar h3 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li {
+    color: var(--light-text);
+    margin-bottom: 8px;
+}
+.sidebar ul li i {
+    margin-right: 8px;
+}
+
+/* --- MODAL (POP-UP FORM) --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.modal-content {
+    background-color: var(--background-white);
+    padding: 40px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 600px;
+}
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 16px;
+}
+.close-button {
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: var(--light-text);
+}
+.selected-product {
+    background-color: #F0F5FA;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.form-grid {
+    display: grid;
+    gap: 16px;
+}
+.form-grid input, .form-grid textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: var(--font-main);
+}
+.form-submit-button {
+    width: 100%;
+    justify-content: center;
+}
+.form-submit-button i {
+    margin-right: 8px;
+}
+
+/* --- BİZİM İMZA STİLİMİZ --- */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.signature {
+    font-family: 'Pacifico', cursive;
+    font-size: 14px;
+    color: #888888; /* Çok baskın olmayan bir renk */
+    margin-top: 16px;
+    text-align: center;
+}

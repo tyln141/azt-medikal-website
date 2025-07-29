@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "anasayfa"
+    label: "Ana Sayfa İçerikleri"
+    files:
+      - label: "Hakkımızda, Neden Biz ve Footer"
+        name: "anasayfa_verileri"
+        file: "_data/anasayfa.json"
+        fields:
+          - { label: "Hakkımızda Metni", name: "hakkimizda_metin", widget: "text" }
+          - { label: "Neden Biz Kart 1 Başlık", name: "nedenbiz1_baslik", widget: "string" }
+          - { label: "Neden Biz Kart 1 Açıklama", name: "nedenbiz1_aciklama", widget: "text" }
+          - { label: "Neden Biz Kart 2 Başlık", name: "nedenbiz2_baslik", widget: "string" }
+          - { label: "Neden Biz Kart 2 Açıklama", name: "nedenbiz2_aciklama", widget: "text" }
+          - { label: "Neden Biz Kart 3 Başlık", name: "nedenbiz3_baslik", widget: "string" }
+          - { label: "Neden Biz Kart 3 Açıklama", name: "nedenbiz3_aciklama", widget: "text" }
+          - { label: "Neden Biz Kart 4 Başlık", name: "nedenbiz4_baslik", widget: "string" }
+          - { label: "Neden Biz Kart 4 Açıklama", name: "nedenbiz4_aciklama", widget: "text" }
+          - { label: "Footer Adres", name: "footer_adres", widget: "string" }
+          - { label: "Footer Telefon", name: "footer_telefon", widget: "string" }
+          - { label: "Footer E-posta", name: "footer_email", widget: "string" }
+
+  - name: "urunler"
+    label: "Ürün Sayfaları"
+    label_singular: "Ürün Sayfası"
+    folder: "_urunler"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Sayfa Başlığı", name: "title", widget: "string" }
+      - { label: "Kategori Açıklaması", name: "description", widget: "text" }
+      - label: "Yan Menü (Sidebar)"
+        name: "sidebar"
+        widget: "list"
+        fields:
+          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "Liste Elemanları", name: "items", widget: "list" }
+      - label: "Alt Ürünler"
+        name: "sub_products"
+        widget: "list"
+        fields:
+          - { label: "Ürün Adı", name: "name", widget: "string" }
+          - { label: "Ürün Görseli Linki", name: "image", widget: "image" }
+          - { label: "Özellikler", name: "features", widget: "list" }

@@ -1,0 +1,21 @@
+{
+  "bolum_basligi": "Neden AZT Medikal?",
+  "ozellik_kartlari": [
+    {
+      "baslik": "Teknoloji",
+      "aciklama": "En son teknoloji ile donatılmış modern medikal cihazlar ve çözümler sunuyoruz."
+    },
+    {
+      "baslik": "Uzman Kadro",
+      "aciklama": "Alanında uzman teknik personelimiz ile kesintisiz destek ve danışmanlık hizmeti veriyoruz."
+    },
+    {
+      "baslik": "Çözüm Ortaklığı",
+      "aciklama": "Sadece satış değil, uzun vadeli çözüm ortaklığı kurarak sürekli destek sağlıyoruz."
+    },
+    {
+      "baslik": "Geniş Tedarik Ağı",
+      "aciklama": "Dünya çapındaki güvenilir tedarikçi ağımız ile her türlü medikal ihtiyacı karşılıyoruz."
+    }
+  ]
+}
