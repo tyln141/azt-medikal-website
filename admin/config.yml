@@ -1,0 +1,69 @@
+# admin/config.yml
+
+# Backend Ayarı: Kodlarımızın nerede durduğunu söylüyoruz.
+# Şimdilik burayı böyle bırakıyoruz, GitHub'a bağlayınca dolduracağız.
+backend:
+  name: git-gateway
+  branch: main # veya master
+
+# Yüklenecek resimlerin nereye kaydedileceğini belirtiyoruz.
+media_folder: "images" # Proje ana dizinindeki images klasörü
+public_folder: "/images" # Resimlerin sitede hangi yoldan görüneceği
+
+# Yönetilecek içeriklerin koleksiyonları
+collections:
+  # 1. KOLEKSİYON: SABİT SAYFALAR
+  - name: "pages"
+    label: "Sayfa İçerikleri"
+    files:
+      # ANASAYFA İÇERİKLERİ
+      - file: "index.html"
+        label: "Anasayfa"
+        name: "index"
+        fields:
+          - {label: "Ana Başlık", name: "hero_title", widget: "string"}
+          - {label: "Ana Alt Başlık", name: "hero_subtitle", widget: "string"}
+          - {label: "Hakkımızda Başlığı", name: "about_title", widget: "string"}
+          - {label: "Hakkımızda Metni", name: "about_text", widget: "markdown"}
+          - {label: "Hakkımızda Resmi", name: "about_image", widget: "image"}
+          - {label: "Ürünler Bölümü Başlığı", name: "products_title", widget: "string"}
+
+  # 2. KOLEKSİYON: ÜRÜN DETAY SAYFALARI
+  - name: "products"
+    label: "Ürün Detay Sayfaları"
+    files:
+      # ÜRÜN DETAY 1
+      - file: "urun-detay-1.html"
+        label: "Ürün Detay: Hemodiyaliz Kateterleri"
+        name: "product_1"
+        fields:
+          - {label: "Ürün Sayfa Başlığı", name: "title", widget: "string"}
+          - {label: "Ürün Sayfa Resmi", name: "image", widget: "image"}
+          - {label: "Ürün Sayfa Açıklaması", name: "description", widget: "text"}
+
+      # ÜRÜN DETAY 2
+      - file: "urun-detay-2.html"
+        label: "Ürün Detay: İnfüzyon Pompaları"
+        name: "product_2"
+        fields:
+          - {label: "Ürün Sayfa Başlığı", name: "title", widget: "string"}
+          - {label: "Ürün Sayfa Resmi", name: "image", widget: "image"}
+          - {label: "Ürün Sayfa Açıklaması", name: "description", widget: "text"}
+
+      # ÜRÜN DETAY 3
+      - file: "urun-detay-3.html"
+        label: "Ürün Detay: Diyaliz Sarf Malzemeleri"
+        name: "product_3"
+        fields:
+          - {label: "Ürün Sayfa Başlığı", name: "title", widget: "string"}
+          - {label: "Ürün Sayfa Resmi", name: "image", widget: "image"}
+          - {label: "Ürün Sayfa Açıklaması", name: "description", widget: "text"}
+
+      # ÜRÜN DETAY 4
+      - file: "urun-detay-4.html"
+        label: "Ürün Detay: Port İğneleri"
+        name: "product_4"
+        fields:
+          - {label: "Ürün Sayfa Başlığı", name: "title", widget: "string"}
+          - {label: "Ürün Sayfa Resmi", name: "image", widget: "image"}
+          - {label: "Ürün Sayfa Açıklaması", name: "description", widget: "text"}
