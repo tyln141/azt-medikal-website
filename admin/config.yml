@@ -1,21 +1,17 @@
 # admin/config.yml
 
 backend:
-  name: github # "git-gateway" yerine "github" yazıyoruz
-  repo: tyln141/azt-medikal-website # Kendi GitHub "kullanıcı-adı/depo-adı"nı yaz
-  branch: main # Projenin ana dalı (genellikle main'dir)
+  name: github
+  repo: tyln141/azt-medikal-website # <-- DOĞRUSU BU ŞEKİLDE
+  branch: main
 
-# Yüklenecek resimlerin nereye kaydedileceğini belirtiyoruz.
-media_folder: "images" # Proje ana dizinindeki images klasörü
-public_folder: "/images" # Resimlerin sitede hangi yoldan görüneceği
+media_folder: "images"
+public_folder: "/images"
 
-# Yönetilecek içeriklerin koleksiyonları
 collections:
-  # 1. KOLEKSİYON: SABİT SAYFALAR
   - name: "pages"
     label: "Sayfa İçerikleri"
     files:
-      # ANASAYFA İÇERİKLERİ
       - file: "index.html"
         label: "Anasayfa"
         name: "index"
@@ -27,11 +23,9 @@ collections:
           - {label: "Hakkımızda Resmi", name: "about_image", widget: "image"}
           - {label: "Ürünler Bölümü Başlığı", name: "products_title", widget: "string"}
 
-  # 2. KOLEKSİYON: ÜRÜN DETAY SAYFALARI
   - name: "products"
     label: "Ürün Detay Sayfaları"
     files:
-      # ÜRÜN DETAY 1
       - file: "urun-detay-1.html"
         label: "Ürün Detay: Hemodiyaliz Kateterleri"
         name: "product_1"
@@ -40,7 +34,6 @@ collections:
           - {label: "Ürün Sayfa Resmi", name: "image", widget: "image"}
           - {label: "Ürün Sayfa Açıklaması", name: "description", widget: "text"}
 
-      # ÜRÜN DETAY 2
       - file: "urun-detay-2.html"
         label: "Ürün Detay: İnfüzyon Pompaları"
         name: "product_2"
@@ -49,7 +42,6 @@ collections:
           - {label: "Ürün Sayfa Resmi", name: "image", widget: "image"}
           - {label: "Ürün Sayfa Açıklaması", name: "description", widget: "text"}
 
-      # ÜRÜN DETAY 3
       - file: "urun-detay-3.html"
         label: "Ürün Detay: Diyaliz Sarf Malzemeleri"
         name: "product_3"
@@ -58,7 +50,6 @@ collections:
           - {label: "Ürün Sayfa Resmi", name: "image", widget: "image"}
           - {label: "Ürün Sayfa Açıklaması", name: "description", widget: "text"}
 
-      # ÜRÜN DETAY 4
       - file: "urun-detay-4.html"
         label: "Ürün Detay: Port İğneleri"
         name: "product_4"
