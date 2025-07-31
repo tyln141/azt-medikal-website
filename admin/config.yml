@@ -1,59 +1,50 @@
-# admin/config.yml
-
 backend:
   name: github
-  repo: tyln141/azt-medikal-website # <-- DOĞRUSU BU ŞEKİLDE
+  repo: tyln141/azt-medikal-website
   branch: main
 
 media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "pages"
-    label: "Sayfa İçerikleri"
+  - name: "site_data"
+    label: "Site Ayarları"
     files:
-      - file: "index.html"
-        label: "Anasayfa"
-        name: "index"
+      - file: "data/content.json"
+        label: "Tüm Site İçerikleri"
+        name: "content"
         fields:
-          - {label: "Ana Başlık", name: "hero_title", widget: "string"}
-          - {label: "Ana Alt Başlık", name: "hero_subtitle", widget: "string"}
-          - {label: "Hakkımızda Başlığı", name: "about_title", widget: "string"}
-          - {label: "Hakkımızda Metni", name: "about_text", widget: "markdown"}
-          - {label: "Hakkımızda Resmi", name: "about_image", widget: "image"}
-          - {label: "Ürünler Bölümü Başlığı", name: "products_title", widget: "string"}
-
-  - name: "products"
-    label: "Ürün Detay Sayfaları"
-    files:
-      - file: "urun-detay-1.html"
-        label: "Ürün Detay: Hemodiyaliz Kateterleri"
-        name: "product_1"
-        fields:
-          - {label: "Ürün Sayfa Başlığı", name: "title", widget: "string"}
-          - {label: "Ürün Sayfa Resmi", name: "image", widget: "image"}
-          - {label: "Ürün Sayfa Açıklaması", name: "description", widget: "text"}
-
-      - file: "urun-detay-2.html"
-        label: "Ürün Detay: İnfüzyon Pompaları"
-        name: "product_2"
-        fields:
-          - {label: "Ürün Sayfa Başlığı", name: "title", widget: "string"}
-          - {label: "Ürün Sayfa Resmi", name: "image", widget: "image"}
-          - {label: "Ürün Sayfa Açıklaması", name: "description", widget: "text"}
-
-      - file: "urun-detay-3.html"
-        label: "Ürün Detay: Diyaliz Sarf Malzemeleri"
-        name: "product_3"
-        fields:
-          - {label: "Ürün Sayfa Başlığı", name: "title", widget: "string"}
-          - {label: "Ürün Sayfa Resmi", name: "image", widget: "image"}
-          - {label: "Ürün Sayfa Açıklaması", name: "description", widget: "text"}
-
-      - file: "urun-detay-4.html"
-        label: "Ürün Detay: Port İğneleri"
-        name: "product_4"
-        fields:
-          - {label: "Ürün Sayfa Başlığı", name: "title", widget: "string"}
-          - {label: "Ürün Sayfa Resmi", name: "image", widget: "image"}
-          - {label: "Ürün Sayfa Açıklaması", name: "description", widget: "text"}
+          - label: "Anasayfa"
+            name: "homepage"
+            widget: "object"
+            fields:
+              - {label: "Giriş Ana Başlık", name: "hero_title", widget: "string"}
+              - {label: "Giriş Alt Başlık", name: "hero_subtitle", widget: "string"}
+              - {label: "Hakkımızda Başlığı", name: "about_title", widget: "string"}
+              - {label: "Hakkımızda Metni", name: "about_text", widget: "text"}
+              - {label: "Hakkımızda Stat 1 Sayı", name: "about_stat1_number", widget: "string"}
+              - {label: "Hakkımızda Stat 1 Metin", name: "about_stat1_text", widget: "string"}
+              - {label: "Hakkımızda Stat 2 Sayı", name: "about_stat2_number", widget: "string"}
+              - {label: "Hakkımızda Stat 2 Metin", name: "about_stat2_text", widget: "string"}
+              - {label: "Hakkımızda Stat 3 Sayı", name: "about_stat3_number", widget: "string"}
+              - {label: "Hakkımızda Stat 3 Metin", name: "about_stat3_text", widget: "string"}
+              - {label: "Hakkımızda Logo/Resim", name: "about_image", widget: "image"}
+              - {label: "Ürünler Bölümü Başlığı", name: "products_section_title", widget: "string"}
+              - {label: "Neden Biz Bölümü Başlığı", name: "why_us_section_title", widget: "string"}
+              - {label: "Neden Biz - Kart 1 Başlık", name: "why_us_card1_title", widget: "string"}
+              - {label: "Neden Biz - Kart 1 Metin", name: "why_us_card1_text", widget: "text"}
+              - {label: "Neden Biz - Kart 2 Başlık", name: "why_us_card2_title", widget: "string"}
+              - {label: "Neden Biz - Kart 2 Metin", name: "why_us_card2_text", widget: "text"}
+              - {label: "Neden Biz - Kart 3 Başlık", name: "why_us_card3_title", widget: "string"}
+              - {label: "Neden Biz - Kart 3 Metin", name: "why_us_card3_text", widget: "text"}
+              - {label: "Neden Biz - Kart 4 Başlık", name: "why_us_card4_title", widget: "string"}
+              - {label: "Neden Biz - Kart 4 Metin", name: "why_us_card4_text", widget: "text"}
+          - label: "Ürünler (Anasayfa)"
+            name: "products"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "hidden"}
+              - {label: "Başlık", name: "title", widget: "string"}
+              - {label: "Kısa Açıklama", name: "description", widget: "string"}
+              - {label: "Resim", name: "image", widget: "image"}
+              - {label: "Ürün Sayfası Linki", name: "page_url", widget: "string"}

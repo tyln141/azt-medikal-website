@@ -1,0 +1,31 @@
+{
+  "homepage": {
+    "hero_title": "A'dan Z'ye Temin",
+    "hero_subtitle": "Sağlık Sektöründeki Güvenilir Çözüm Ortağınız",
+    "about_title": "Hakkımızda",
+    "about_text": "2010'dan beri Ankara'da sağlık profesyonellerinin çözüm ortağıyız. 'A'dan Z'ye Temin' anlayışıyla, uzman kadromuzla modern medikal çözümler sunuyoruz.",
+    "about_stat1_number": "15+",
+    "about_stat1_text": "Yıl Tecrübe",
+    "about_stat2_number": "500+",
+    "about_stat2_text": "Mutlu Müşteri",
+    "about_stat3_number": "1000+",
+    "about_stat3_text": "Ürün Çeşidi",
+    "about_image": "images/azt logo.jpeg",
+    "products_section_title": "Ana Ürün Kategorilerimiz",
+    "why_us_section_title": "Neden AZT Medikal?",
+    "why_us_card1_title": "Teknoloji",
+    "why_us_card1_text": "En son teknoloji ile donatılmış modern medikal cihazlar ve çözümler sunuyoruz.",
+    "why_us_card2_title": "Uzman Kadro",
+    "why_us_card2_text": "Alanında uzman teknik personelimiz ile kesintisiz destek ve danışmanlık hizmeti veriyoruz.",
+    "why_us_card3_title": "Çözüm Ortaklığı",
+    "why_us_card3_text": "Sadece satış değil, uzun vadeli çözüm ortaklığı kurarak sürekli destek sağlıyoruz.",
+    "why_us_card4_title": "Geniş Tedarik Ağı",
+    "why_us_card4_text": "Dünya çapındaki güvenilir tedarikçi ağımız ile her türlü medikal ihtiyacı karşılıyoruz."
+  },
+  "products": [
+    { "id": 1, "title": "Hemodiyaliz Kateterleri", "description": "Yüksek kaliteli ve güvenilir çözümlerle hasta güvenliğini ön planda tutuyoruz.", "image": "images/hemodiyaliz-kateteri.webp", "page_url": "urun-detay-1.html" },
+    { "id": 2, "title": "İnfüzyon Pompaları", "description": "Hassas dozaj kontrolü sağlayan modern tasarımlarla tedavi süreçlerini optimize ediyoruz.", "image": "images/İnfüzyon Pompaları.jpg", "page_url": "urun-detay-2.html" },
+    { "id": 3, "title": "Diyaliz Sarf Malzemeleri", "description": "Tüm diyaliz ihtiyaçları için kapsamlı ve kaliteli sarf malzeme seçenekleri sunuyoruz.", "image": "images/Diyaliz Sarf Malzemeleri.jpg", "page_url": "urun-detay-3.html" },
+    { "id": 4, "title": "Port İğneleri", "description": "Güvenilir port erişimi için özel olarak tasarlanmış yüksek kaliteli port iğneleri sunuyoruz.", "image": "images/Port İğneleri.jpg", "page_url": "urun-detay-4.html" }
+  ]
+}
