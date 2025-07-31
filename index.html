@@ -1,209 +1,147 @@
 <!DOCTYPE html>
-<html lang="tr" class="scroll-smooth">
+<html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AZT Medikal - A'dan Z'ye Temin</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZT Medikal - A'dan Z'ye Temin</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
-<body class="font-sans">
+<body>
 
-  <header class="header sticky top-0 z-50 bg-white shadow-md">
-    <div class="container header-container">
-      <div class="logo">AZT Medikal®</div>
-      <nav class="nav">
-        <a href="#hakkimizda">Hakkımızda</a>
-        <a href="#urunler">Ürünler</a>
-        <a href="#neden-biz">Neden Biz</a>
-        <a href="#iletisim">İletişim</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-
-    <!-- DİNAMİK HERO -->
-    <section class="relative min-h-screen flex items-center justify-center bg-cover bg-center" id="hero-section">
-      <div class="w-full max-w-6xl mx-auto px-6 text-center text-white">
-        <h1 class="text-6xl font-bold mb-6 leading-tight" id="hero_title"></h1>
-        <p class="text-2xl mb-12 opacity-90 max-w-3xl mx-auto" id="hero_subtitle"></p>
-        <a href="#products">
-          <button class="bg-[#2E5C8A] text-white px-12 py-4 rounded-full text-lg font-bold transition-transform hover:scale-105 shadow-lg">
-            Ürünlerimizi İnceleyin
-          </button>
-        </a>
-      </div>
-    </section>
-
-    <!-- DİNAMİK HAKKIMIZDA -->
-    <section id="about" class="py-20 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="text-4xl font-bold mb-8 text-gray-800" id="about_title"></h2>
-          <p class="text-lg leading-relaxed mb-8 text-gray-600" id="about_text"></p>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">AZT Medikal®</div>
+            <nav class="nav">
+                <a href="#hakkimizda">Hakkımızda</a>
+                <a href="#urunler">Ürünler</a>
+                <a href="#neden-biz">Neden Biz</a>
+                <a href="#iletisim">İletişim</a>
+            </nav>
         </div>
-        <div><img id="about_image" src="" alt="Hakkımızda" class="rounded-lg shadow-lg w-full h-auto"></div>
-      </div>
-    </section>
+    </header>
 
-    <!-- ORİJİNAL STATİK HAKKIMIZDA -->
-    <section id="hakkimizda" class="section">
-      <div class="container about-container">
-        <div class="about-text">
-          <h2>Hakkımızda</h2>
-          <p>2010'dan beri Ankara'da sağlık profesyonellerinin çözüm ortağıyız. 'A'dan Z'ye Temin' anlayışıyla, uzman kadromuzla modern medikal çözümler sunuyoruz.</p>
-          <div class="stats-container">
-            <div class="stat-item"><strong>15+</strong><span>Yıl Tecrübe</span></div>
-            <div class="stat-item"><strong>500+</strong><span>Mutlu Müşteri</span></div>
-            <div class="stat-item"><strong>1000+</strong><span>Ürün Çeşidi</span></div>
-          </div>
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>A'dan Z'ye Temin</h1>
+                <h2>Sağlık Sektöründeki Güvenilir Çözüm Ortağınız</h2>
+                <a href="#urunler" class="button">Ürünlerimizi İnceleyin</a>
+            </div>
+        </section>
+
+        <section id="hakkimizda" class="section">
+            <div class="container about-container">
+                <div class="about-text">
+                    <h2>Hakkımızda</h2>
+                    <p>2010'dan beri Ankara'da sağlık profesyonellerinin çözüm ortağıyız. 'A'dan Z'ye Temin' anlayışıyla, uzman kadromuzla modern medikal çözümler sunuyoruz.</p>
+                    <div class="stats-container">
+                        <div class="stat-item"><strong>15+</strong><span>Yıl Tecrübe</span></div>
+                        <div class="stat-item"><strong>500+</strong><span>Mutlu Müşteri</span></div>
+                        <div class="stat-item"><strong>1000+</strong><span>Ürün Çeşidi</span></div>
+                    </div>
+                </div>
+                <div class="about-logo">
+                    <img src="images/azt logo.jpeg" alt="AZT Medikal Logo">
+                </div>
+            </div>
+        </section>
+
+        <section id="urunler" class="section section-grey">
+            <div class="container">
+                <h2 class="section-title">Ana Ürün Kategorilerimiz</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <img src="images/hemodiyaliz-kateteri.webp" alt="Hemodiyaliz Kateterleri">
+                        <h3>Hemodiyaliz Kateterleri</h3>
+                        <p>Yüksek kaliteli ve güvenilir çözümlerle hasta güvenliğini ön planda tutuyoruz.</p>
+                        <a href="urun-detay-1.html" class="button-card">Detayları İncele</a>
+                    </div>
+                    <div class="card">
+                        <img src="images/İnfüzyon Pompaları.jpg" alt="İnfüzyon Pompaları">
+                        <h3>İnfüzyon Pompaları</h3>
+                        <p>Hassas dozaj kontrolü sağlayan modern tasarımlarla tedavi süreçlerini optimize ediyoruz.</p>
+                        <a href="urun-detay-2.html" class="button-card">Detayları İncele</a>
+                    </div>
+                    <div class="card">
+                        <img src="images/Diyaliz Sarf Malzemeleri.jpg" alt="Diyaliz Sarf Malzemeleri">
+                        <h3>Diyaliz Sarf Malzemeleri</h3>
+                        <p>Tüm diyaliz ihtiyaçları için kapsamlı ve kaliteli sarf malzeme seçenekleri sunuyoruz.</p>
+                        <a href="urun-detay-3.html" class="button-card">Detayları İncele</a>
+                    </div>
+                    <div class="card">
+                         <img src="images/Port İğneleri.jpg" alt="Port İğneleri">
+                        <h3>Port İğneleri</h3>
+                        <p>Güvenilir port erişimi için özel olarak tasarlanmış yüksek kaliteli port iğneleri sunuyoruz.</p>
+                        <a href="urun-detay-4.html" class="button-card">Detayları İncele</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="neden-biz" class="section">
+            <div class="container">
+                <h2 class="section-title">Neden AZT Medikal?</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <i class="ri-settings-3-line card-icon"></i>
+                        <h3>Teknoloji</h3>
+                        <p>En son teknoloji ile donatılmış modern medikal cihazlar ve çözümler sunuyoruz.</p>
+                    </div>
+                    <div class="card">
+                        <i class="ri-team-line card-icon"></i>
+                        <h3>Uzman Kadro</h3>
+                        <p>Alanında uzman teknik personelimiz ile kesintisiz destek ve danışmanlık hizmeti veriyoruz.</p>
+                    </div>
+                    <div class="card">
+                        <i class="ri-hand-heart-line card-icon"></i>
+                        <h3>Çözüm Ortaklığı</h3>
+                        <p>Sadece satış değil, uzun vadeli çözüm ortaklığı kurarak sürekli destek sağlıyoruz.</p>
+                    </div>
+                    <div class="card">
+                        <i class="ri-global-line card-icon"></i>
+                        <h3>Geniş Tedarik Ağı</h3>
+                        <p>Dünya çapındaki güvenilir tedarikçi ağımız ile her türlü medikal ihtiyacı karşılıyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="iletisim" class="footer">
+        <div class="container footer-container">
+            <div class="footer-column">
+                <div class="logo">AZT Medikal</div>
+                <p>2010'dan beri sağlık sektöründe güvenilir çözüm ortağı. A'dan Z'ye medikal temin hizmetleri.</p>
+                <span>© 2025 AZT Medikal. Tüm hakları saklıdır.</span>
+            </div>
+            <div class="footer-column">
+                <h4>İletişim Bilgileri</h4>
+                <p><i class="ri-map-pin-line"></i> Kırkkonaklar Mah. 316 cad. 335 sok. N0:13/A, Çankaya/Ankara</p>
+                <p><i class="ri-phone-line"></i> (0312) 495 54 87</p>
+                <p><i class="ri-mail-line"></i> azt@aztmedikal.com.tr</p>
+            </div>
+            <div class="footer-column">
+                <h4>Çalışma Saatleri</h4>
+                <p><span>Pazartesi - Cuma:</span> 09:00 - 17:00</p>
+                <p><span>Cumartesi:</span> Kapalı</p>
+                <p><span>Pazar:</span> Kapalı</p>
+
+                <div class="footer-bottom">
+            <p>© 2025 AZT Medikal. Tüm hakları saklıdır.</p>
+            <p class="signature">Made with 👽 by LeverTeknoDizayn</p>
         </div>
-        <div class="about-logo">
-          <img src="images/azt logo.jpeg" alt="AZT Medikal Logo">
+
+            </div>
         </div>
-      </div>
-    </section>
+    </footer>
+<script>
+  if (window.location.hash.includes('invite_token')) {
+    window.location.href = '/admin/' + window.location.hash;
+  }
+</script>
 
-    <!-- ORİJİNAL STATİK ÜRÜNLER -->
-    <section id="urunler" class="section section-grey">
-      <div class="container">
-        <h2 class="section-title">Ana Ürün Kategorilerimiz</h2>
-        <div class="card-grid">
-          <div class="card">
-            <img src="images/hemodiyaliz-kateteri.webp" alt="Hemodiyaliz Kateterleri">
-            <h3>Hemodiyaliz Kateterleri</h3>
-            <p>Yüksek kaliteli ve güvenilir çözümlerle hasta güvenliğini ön planda tutuyoruz.</p>
-            <a href="urun-detay-1.html" class="button-card">Detayları İncele</a>
-          </div>
-          <div class="card">
-            <img src="images/İnfüzyon Pompaları.jpg" alt="İnfüzyon Pompaları">
-            <h3>İnfüzyon Pompaları</h3>
-            <p>Hassas dozaj kontrolü sağlayan modern tasarımlarla tedavi süreçlerini optimize ediyoruz.</p>
-            <a href="urun-detay-2.html" class="button-card">Detayları İncele</a>
-          </div>
-          <div class="card">
-            <img src="images/Diyaliz Sarf Malzemeleri.jpg" alt="Diyaliz Sarf Malzemeleri">
-            <h3>Diyaliz Sarf Malzemeleri</h3>
-            <p>Tüm diyaliz ihtiyaçları için kapsamlı ve kaliteli sarf malzeme seçenekleri sunuyoruz.</p>
-            <a href="urun-detay-3.html" class="button-card">Detayları İncele</a>
-          </div>
-          <div class="card">
-            <img src="images/Port İğneleri.jpg" alt="Port İğneleri">
-            <h3>Port İğneleri</h3>
-            <p>Güvenilir port erişimi için özel olarak tasarlanmış yüksek kaliteli port iğneleri sunuyoruz.</p>
-            <a href="urun-detay-4.html" class="button-card">Detayları İncele</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- DİNAMİK ÜRÜNLER -->
-    <section id="products" class="py-20 bg-white">
-      <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center mb-16 text-gray-800" id="products_title"></h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8" id="product-list"></div>
-      </div>
-    </section>
-
-    <!-- ORİJİNAL STATİK NEDEN BİZ -->
-    <section id="neden-biz" class="section">
-      <div class="container">
-        <h2 class="section-title">Neden AZT Medikal?</h2>
-        <div class="card-grid">
-          <div class="card">
-            <i class="ri-settings-3-line card-icon"></i>
-            <h3>Teknoloji</h3>
-            <p>En son teknoloji ile donatılmış modern medikal cihazlar ve çözümler sunuyoruz.</p>
-          </div>
-          <div class="card">
-            <i class="ri-team-line card-icon"></i>
-            <h3>Uzman Kadro</h3>
-            <p>Alanında uzman teknik personelimiz ile kesintisiz destek ve danışmanlık hizmeti veriyoruz.</p>
-          </div>
-          <div class="card">
-            <i class="ri-hand-heart-line card-icon"></i>
-            <h3>Çözüm Ortaklığı</h3>
-            <p>Sadece satış değil, uzun vadeli çözüm ortaklığı kurarak sürekli destek sağlıyoruz.</p>
-          </div>
-          <div class="card">
-            <i class="ri-global-line card-icon"></i>
-            <h3>Geniş Tedarik Ağı</h3>
-            <p>Dünya çapındaki güvenilir tedarikçi ağımız ile her türlü medikal ihtiyacı karşılıyoruz.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer id="iletisim" class="footer bg-gray-800 text-white py-16">
-    <div class="container footer-container">
-      <div class="footer-column">
-        <div class="logo">AZT Medikal</div>
-        <p>2010'dan beri sağlık sektöründe güvenilir çözüm ortağı. A'dan Z'ye medikal temin hizmetleri.</p>
-        <span>© 2025 AZT Medikal. Tüm hakları saklıdır.</span>
-      </div>
-      <div class="footer-column">
-        <h4>İletişim Bilgileri</h4>
-        <p><i class="ri-map-pin-line"></i> Kırkkonaklar Mah. 316 cad. 335 sok. N0:13/A, Çankaya/Ankara</p>
-        <p><i class="ri-phone-line"></i> (0312) 495 54 87</p>
-        <p><i class="ri-mail-line"></i> azt@aztmedikal.com.tr</p>
-      </div>
-      <div class="footer-column">
-        <h4>Çalışma Saatleri</h4>
-        <p><span>Pazartesi - Cuma:</span> 09:00 - 17:00</p>
-        <p><span>Cumartesi:</span> Kapalı</p>
-        <p><span>Pazar:</span> Kapalı</p>
-        <div class="footer-bottom mt-6">
-          <p>© 2025 AZT Medikal. Tüm hakları saklıdır.</p>
-          <p class="signature">Made with 👽 by LeverTeknoDizayn</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Admin Panel yönlendirme -->
-  <script>
-    if (window.location.hash.includes('invite_token')) {
-      window.location.href = '/admin/' + window.location.hash;
-    }
-  </script>
-
-  <!-- JSON içeriği dinamik doldurma -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      fetch('/data/content.json')
-        .then(response => response.json())
-        .then(data => {
-          const hp = data.homepage;
-          document.getElementById('hero_title').textContent = hp.hero_title;
-          document.getElementById('hero_subtitle').textContent = hp.hero_subtitle;
-          document.getElementById('about_title').textContent = hp.about_title;
-          document.getElementById('about_text').textContent = hp.about_text;
-          document.getElementById('about_image').src = hp.about_image;
-          document.getElementById('hero-section').style.backgroundImage =
-            `linear-gradient(rgba(46, 92, 138, 0.3), rgba(46, 92, 138, 0.3)), url('${hp.about_image}')`;
-          document.getElementById('products_title').textContent = hp.products_title;
-
-          const productList = document.getElementById('product-list');
-          data.products.forEach(product => {
-            const productCard = `
-              <div class="bg-white rounded-xl shadow-lg border border-gray-200 p-8 text-center transition-transform hover:-translate-y-2">
-                <img src="${product.image}" alt="${product.title}" class="w-full h-48 object-cover rounded-lg mb-6">
-                <h3 class="text-lg font-bold mb-4 text-gray-800">${product.title}</h3>
-                <p class="text-sm text-gray-600 mb-6">${product.description}</p>
-                <a href="${product.page_url}">
-                  <button class="bg-[#2E5C8A] text-white px-6 py-3 rounded-lg font-bold w-full">Detayları İncele</button>
-                </a>
-              </div>`;
-            productList.innerHTML += productCard;
-          });
-        });
-    });
-  </script>
-
+</body>
+</html>
 </body>
 </html>
