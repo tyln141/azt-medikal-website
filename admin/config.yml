@@ -2,6 +2,7 @@ backend:
   name: github
   repo: tyln141/azt-medikal-website
   branch: main
+  site_domain: gentle-crostata-7a3de1.netlify.app
 
 media_folder: "images"
 public_folder: "/images"
