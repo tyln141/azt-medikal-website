@@ -215,75 +215,31 @@ body {
 }
 
 /* --- FOOTER --- */
-
 .footer {
     background-color: var(--dark-text);
     color: var(--background-grey);
     padding: 60px 0;
 }
-
 .footer-container {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    align-items: flex-start;
-
-    max-width: 1200px;         /* İçeriği sınırlı tut */
-    margin: 0 auto;            /* Ortala */
-    padding: 0 40px;           /* Kenar boşluğu */
-    box-sizing: border-box;   /* Padding genişlik dışında kalmasın */
 }
-
-
 .footer-column {
     flex: 1;
-    /* Kolonun içindeki her şeyi dikey bir sütun gibi davranmaya zorla */
-    display: flex;
-    flex-direction: column;
-    /* Kolon içindeki her şeyi sola yasla (EN GÜÇLÜ KURAL) */
-    align-items: flex-start;
-
-    max-width: 1200px;   /* veya senin sitenin genişliğine uygun bir değer */
-    margin: 0 auto;
-    padding: 0 40px;     /* mobilde daha iyi görünmesi için */
-    box-sizing: border-box;
 }
-
-/* Kolon içindeki her elementin sola yaslı olduğunu garantiye al */
-.footer-column .logo,
-.footer-column h4,
-.footer-column p,
-.footer-column span {
-    text-align: left;
-    width: 100%; /* Elementlerin tüm genişliği kaplamasını sağlar */
-}
-
 .footer-column h4 {
     font-size: 18px;
     margin-bottom: 24px;
     color: var(--background-white);
 }
-
 .footer-column p, .footer-column span {
     color: #A9A9A9;
     margin-bottom: 12px;
 }
-
 .footer-column i {
     margin-right: 8px;
     color: var(--primary-color);
-}
-
-/* İmza Stilimiz */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
-.signature {
-    font-family: var(--font-signature);
-    font-size: 14px;
-    color: #888888;
-    margin-top: 32px;
-    text-align: center;
-    width: 100%;
 }
 .signature {
     font-family: var(--font-signature);
@@ -457,15 +413,4 @@ body {
 }
 .form-submit-button i {
     margin-right: 8px;
-}
-
-/* --- BİZİM İMZA STİLİMİZ --- */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
-.signature {
-    font-family: 'Pacifico', cursive;
-    font-size: 14px;
-    color: #888888; /* Çok baskın olmayan bir renk */
-    margin-top: 16px;
-    text-align: center;
 }
